@@ -32,7 +32,7 @@ const StyledSocialList = styled.ul`
 
       &:hover,
       &:focus {
-        transform: translateY(-3px);
+        transform: rotate(360deg);
       }
 
       svg {

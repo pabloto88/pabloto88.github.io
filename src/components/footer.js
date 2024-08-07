@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Icon } from '@components/icons';
-import { socialMedia } from '@config';
+import { socialMedia, colors } from '@config';
 
 const StyledFooter = styled.footer`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -68,7 +68,7 @@ const StyledCredit = styled.div`
 `;
 
 const Footer = () => {
-  const [githubInfo, setGitHubInfo] = useState({
+  const [setGitHubInfo] = useState({
     stars: null,
     forks: null,
   });
@@ -105,22 +105,11 @@ const Footer = () => {
       </StyledSocialLinks>
 
       <StyledCredit tabindex="-1">
-        <a href="https://github.com/bchiang7/v4">
-          <div>Designed &amp; Built by Brittany Chiang</div>
-
-          {githubInfo.stars && githubInfo.forks && (
-            <div className="github-stats">
-              <span>
-                <Icon name="Star" />
-                <span>{githubInfo.stars.toLocaleString()}</span>
-              </span>
-              <span>
-                <Icon name="Fork" />
-                <span>{githubInfo.forks.toLocaleString()}</span>
-              </span>
-            </div>
-          )}
-        </a>
+        <div>
+          Customized by<a href="https://github.com/pabloto88/pabloto88.github.io">Pablo Torres</a>
+          <span style={{ color: colors.green }}>|</span> Designed & built by talented the
+          <a href="https://github.com/bchiang7/v4">Brittany Chiang</a>
+        </div>
       </StyledCredit>
     </StyledFooter>
   );
