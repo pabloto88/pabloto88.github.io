@@ -16,7 +16,7 @@ const button = css`
   &:focus-visible {
     outline: none;
     box-shadow: 4px 4px 0 0 var(--green);
-    transform: translate(-5px, -5px);
+    transform: translate(-15px, -15px);
   }
   &:after {
     display: none !important;

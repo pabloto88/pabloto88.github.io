@@ -107,7 +107,7 @@ const Footer = () => {
       <StyledCredit tabindex="-1">
         <div>
           Customized by<a href="https://github.com/pabloto88/pabloto88.github.io">Pablo Torres</a>
-          <span style={{ color: colors.green }}>|</span> Designed & built by talented the
+          <span style={{ color: colors.green }}>|</span> Designed & built by talented
           <a href="https://github.com/bchiang7/v4">Brittany Chiang</a>
         </div>
       </StyledCredit>
